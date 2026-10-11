@@ -1478,3 +1478,157 @@ header nav a:hover {
         font-size: 14px;
     }
 }
+
+
+/* ==========================
+   FIX RESPONSIVE HP
+========================== */
+
+@media (max-width: 600px) {
+
+    /* HOME */
+    #home {
+        min-height: auto;
+        padding: 55px 6% 60px;
+        gap: 10px;
+    }
+
+    #home img {
+        width: 145px;
+        height: 145px;
+        margin-bottom: 15px;
+    }
+
+    #home > p:first-of-type {
+        max-width: 100%;
+        font-size: 7px;
+        letter-spacing: 1px;
+        padding: 8px 10px;
+        line-height: 1.8;
+    }
+
+    #home h1 {
+        font-size: clamp(16px, 5vw, 22px);
+        line-height: 1.8;
+        overflow-wrap: break-word;
+    }
+
+    #home h2 {
+        font-size: 13px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+
+    #home p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    #home a {
+        max-width: 100%;
+        padding: 11px 18px;
+    }
+
+    /* MY EXPERIENCE */
+    #experience {
+        padding: 40px 6%;
+    }
+
+    #experience h2 {
+        margin-bottom: 18px;
+    }
+
+    .experience-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .experience-card {
+        width: 100%;
+        padding: 16px;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .experience-icon {
+        font-size: 25px;
+        flex-shrink: 0;
+    }
+
+    .experience-info {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .experience-card h3 {
+        font-size: 17px;
+        line-height: 1.5;
+        margin: 4px 0 8px;
+    }
+
+    .experience-card h4 {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0 0 6px;
+    }
+
+    .experience-date,
+    .experience-department,
+    .experience-description {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .experience-description {
+        margin-top: 8px;
+    }
+
+    .experience-tags {
+        gap: 6px;
+        margin-top: 10px;
+    }
+
+    .experience-tags span {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    /* CONTACT */
+    #contact {
+        padding: 40px 6%;
+    }
+
+    #contact h2 {
+        margin-bottom: 15px;
+    }
+
+    #contact .section-description {
+        margin-bottom: 20px;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px 16px;
+    }
+
+    .contact-card > p {
+        font-size: 14px;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-links {
+        gap: 10px;
+        margin-top: 16px;
+    }
+
+    .contact-links a {
+        max-width: 100%;
+        padding: 10px 12px;
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+}

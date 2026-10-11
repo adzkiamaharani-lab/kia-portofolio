@@ -1,0 +1,1480 @@
+
+/* ==========================
+   ADZKIA'S WORLD
+   Pastel Pixel Game Theme
+========================== */
+
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dff4ff;
+    color: #454563;
+    line-height: 1.7;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Navigasi */
+header {
+    background-color: #fff4fa;
+    border-bottom: 4px solid #b7dcb7;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    color: #8e79bd;
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: #555477;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e88fba;
+}
+
+/* Pengaturan setiap bagian */
+section {
+    padding: 75px 8%;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #8e79bd;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* HOME */
+#home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #dff4ff;
+    border-bottom: 5px dashed #b8dcb7;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+#home img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+
+    border: 6px solid #fff4fa;
+    outline: 4px solid #b69adf;
+    box-shadow:
+        8px 8px 0 #a8c9e5,
+        -8px -8px 0 #b7ddb8;
+
+    image-rendering: pixelated;
+    margin-bottom: 30px;
+}
+
+#home p:first-of-type {
+    color: #8e79bd;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#home h1 {
+    font-size: 48px;
+    color: #8e79bd;
+    line-height: 1.3;
+}
+
+#home h2 {
+    color: #e88fba;
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+#home a {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 24px;
+    background-color: #b9dfb9;
+    color: #454563;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #8dbd91;
+    box-shadow: 4px 4px 0 #8dbd91;
+    transition: 0.2s;
+}
+
+#home a:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 #8dbd91;
+}
+
+/* ABOUT ME */
+#about {
+    background-color: #fff4fa;
+}
+
+#about p {
+    max-width: 850px;
+    background-color: #ffffff;
+    border: 3px solid #f1c5df;
+    padding: 20px;
+    box-shadow: 5px 5px 0 #e9c5e0;
+}
+
+/* SKILLS */
+#skills {
+    background-color: #eee8ff;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.skill-card {
+    background-color: #fffaff;
+    border: 3px solid #c8b6ec;
+    padding: 22px;
+    box-shadow: 5px 5px 0 #c8b6ec;
+    transition: transform 0.2s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    color: #8e79bd;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 14px;
+}
+
+/* Progress bar kemampuan */
+.skill-bar {
+    width: 100%;
+    height: 22px;
+    background-color: #e4def3;
+    border: 2px solid #c8b6ec;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #b7ddb8;
+    color: #3f5c49;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+
+/* EDUCATION */
+#education {
+    background-color: #e4f6df;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.education-card {
+    background-color: #fffdf2;
+    border: 3px solid #acd3a9;
+    padding: 24px;
+    box-shadow: 5px 5px 0 #acd3a9;
+}
+
+.education-card h3 {
+    color: #668f72;
+    margin-bottom: 12px;
+}
+
+/* EXPERIENCE */
+#experience {
+    background-color: #fff0df;
+}
+
+.experience-container {
+    max-width: 750px;
+}
+
+.experience-card {
+    background-color: #fffaf3;
+    border: 3px solid #efc89d;
+    padding: 25px;
+    box-shadow: 5px 5px 0 #efc89d;
+}
+
+.experience-card h3 {
+    color: #b98152;
+    margin-bottom: 12px;
+}
+
+.experience-card h4 {
+    margin-bottom: 8px;
+}
+
+/* CONTACT */
+#contact {
+    background-color: #fce6f2;
+    text-align: center;
+}
+
+#contact p {
+    max-width: 650px;
+    margin: 0 auto 15px;
+}
+
+#contact a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 24px;
+    background-color: #fffaff;
+    color: #9d6f9b;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #dba9cf;
+    box-shadow: 4px 4px 0 #dba9cf;
+}
+
+#contact a:hover {
+    background-color: #f8d6ea;
+}
+
+/* FOOTER */
+footer {
+    background-color: #c8b6ec;
+    color: #454563;
+    text-align: center;
+    padding: 22px;
+    border-top: 4px solid #ad99d6;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    .skill-container,
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Label karakter game */
+#home > p:first-of-type {
+    display: inline-block;
+    background-color: #fff4fa;
+    color: #8c75bd;
+    border: 3px solid #b69adf;
+    padding: 10px 18px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 4px 4px 0 #a8c9e5;
+    margin-bottom: 20px;
+}
+
+
+/* Efek tombol Start Exploring */
+#home a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #b69adf;
+    color: white;
+    padding: 14px 24px;
+    border: 3px solid #8c75bd;
+    box-shadow: 5px 5px 0 #a8c9e5;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+/* Efek saat tombol disentuh atau diarahkan kursor */
+#home a:hover {
+    background-color: #a8c9e5;
+    color: #454563;
+    box-shadow: 2px 2px 0 #8c75bd;
+    transform: translate(3px, 3px);
+}
+
+/* Efek saat tombol diklik */
+#home a:active {
+    transform: translate(5px, 5px);
+    box-shadow: none;
+}
+
+
+/* ==========================
+   UNIQUE FONT COMBINATION
+========================== */
+
+/* Tulisan utama website */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Logo Adzkia's World */
+header h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* Menu navigasi */
+nav a {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Judul utama Home */
+#home h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+
+/* Nama Adzkia */
+#home h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/* Label welcome ala game */
+#home > p:first-of-type {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px;
+    line-height: 2;
+}
+
+/* Judul setiap section */
+section > h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* Judul kartu Skills, Education, Experience */
+.skill-card h3,
+.education-card h3,
+.experience-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+}
+
+/* Subjudul pengalaman */
+.experience-card h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+/* Paragraf dan isi kartu */
+section p {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Tombol Home dan Contact */
+#home a,
+#contact a {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+}
+
+/* Footer dengan gaya tulisan tangan */
+footer p {
+    font-family: 'Pacifico', cursive;
+    font-size: 14px;
+}
+
+
+/* Animasi saat halaman dibuka */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Elemen Home muncul secara perlahan */
+#home img {
+    animation: appear 0.8s ease-out;
+}
+
+#home p,
+#home h1,
+#home h2,
+#home a {
+    animation: appear 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+/* Animasi dengan jeda */
+#home p {
+    animation-delay: 0.2s;
+}
+
+#home h1 {
+    animation-delay: 0.4s;
+}
+
+#home h2 {
+    animation-delay: 0.6s;
+}
+
+#home a {
+    animation-delay: 0.8s;
+}
+
+
+/* ==========================
+   PIXEL GAME DECORATIONS
+========================== */
+
+/* Bintang kecil di sudut Home */
+#home {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dekorasi bintang */
+#home::before {
+    content: "✦  ✧  ⋆";
+    position: absolute;
+    top: 45px;
+    left: 7%;
+    color: #b69adf;
+    font-size: 32px;
+    letter-spacing: 12px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Dekorasi bunga */
+#home::after {
+    content: "✿  ✿";
+    position: absolute;
+    bottom: 35px;
+    right: 8%;
+    color: #e88fba;
+    font-size: 30px;
+    letter-spacing: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animasi dekorasi melayang */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Dekorasi tetap kecil di layar HP */
+@media (max-width: 768px) {
+    #home::before {
+        top: 20px;
+        left: 4%;
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+
+    #home::after {
+        bottom: 20px;
+        right: 4%;
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+}
+
+
+/* ==========================
+   GAME INVENTORY - MY SKILLS
+========================== */
+
+/* Kartu skill seperti item inventory */
+.skill-card {
+    position: relative;
+    background-color: #fffaff;
+    border: 3px solid #b69adf;
+    box-shadow: 5px 5px 0 #b69adf;
+    padding: 24px 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efek saat item disentuh */
+.skill-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 7px 10px 0 #a8c9e5;
+    background-color: #fff4fa;
+}
+
+/* Judul item */
+.skill-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    color: #8e79bd;
+    margin-bottom: 12px;
+}
+
+/* Deskripsi item */
+.skill-card p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Bingkai progress bar seperti status game */
+.skill-bar {
+    height: 24px;
+    background-color: #e4def3;
+    border: 3px solid #b69adf;
+    padding: 2px;
+    margin-top: 18px;
+}
+
+/* Isi progress bar */
+.skill-progress {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    background-color: #b7ddb8;
+    color: #3f5c49;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+    padding-right: 5px;
+    transition: width 0.5s ease;
+}
+
+
+/* ==========================
+   ADVENTURE CHECKPOINTS
+========================== */
+
+/* Area Education */
+#education {
+    position: relative;
+}
+
+/* Kartu pendidikan */
+.education-card {
+    position: relative;
+    background-color: #fafff5;
+    border: 3px solid #acd3a9;
+    box-shadow: 5px 5px 0 #acd3a9;
+    padding: 25px;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+/* Efek kartu saat diarahkan kursor */
+.education-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 7px 9px 0 #acd3a9;
+}
+
+/* Nama sekolah dan kampus */
+.education-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 21px;
+    color: #668f72;
+    margin-bottom: 12px;
+}
+
+/* Quest yang sudah diselesaikan */
+.education-card::after {
+    content: "✦ CHECKPOINT";
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 10px;
+    background-color: #dff4d8;
+    color: #4c8057;
+    border: 2px solid #acd3a9;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+}
+
+
+/* ==========================
+   QUEST LOG - EXPERIENCE
+========================== */
+
+#experience {
+    position: relative;
+}
+
+/* Kartu pengalaman magang */
+.experience-card {
+    position: relative;
+    background-color: #fffaf3;
+    border: 3px solid #efc89d;
+    box-shadow: 5px 5px 0 #efc89d;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+/* Efek kartu quest */
+.experience-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 7px 9px 0 #efc89d;
+}
+
+/* Judul quest */
+.experience-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 22px;
+    color: #b98152;
+}
+
+/* Label quest selesai */
+.experience-card::after {
+    content: "✓ QUEST COMPLETED";
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 10px;
+    background-color: #dff4d8;
+    color: #4c8057;
+    border: 2px solid #acd3a9;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+}
+
+
+/* FIX posisi seluruh halaman */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Biar isi section nggak melebar */
+#about,
+#skills,
+#education,
+#experience,
+#contact {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+/* SKILLS */
+#skills {
+    background-color: #eaf5ff;
+}
+
+#skills .section-description {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #77718f;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background-color: #fffdf7;
+    border: 2px solid #d8c4f1;
+    border-radius: 14px;
+    padding: 22px 16px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+}
+
+.skill-icon {
+    font-size: 32px;
+}
+
+.skill-card h3 {
+    color: #625080;
+    font-size: 17px;
+    margin: 12px 0 8px;
+}
+
+.skill-card p {
+    color: #77718f;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 450px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* EDUCATION */
+#education {
+    background-color: #fff7fb;
+}
+
+#education .section-description {
+    text-align: center;
+    color: #77718f;
+    margin-bottom: 30px;
+}
+
+.education-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px;
+    background-color: #fffdf7;
+    border: 2px solid #e9cde0;
+    border-radius: 14px;
+    box-shadow: 4px 4px 0 #f2dce9;
+}
+
+.education-icon {
+    font-size: 32px;
+}
+
+.education-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.education-year {
+    color: #a078a0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.education-card h3 {
+    color: #625080;
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.education-card p {
+    line-height: 1.6;
+}
+
+.education-badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: #f5e6f3;
+    color: #876589;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+@media (max-width: 500px) {
+    .education-card {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .education-card h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* EXPERIENCE */
+#experience {
+    background-color: #f0f9f4;
+}
+
+#experience .section-description {
+    text-align: center;
+    color: #77718f;
+    margin-bottom: 30px;
+}
+
+.experience-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    background-color: #fffdf7;
+    border: 2px solid #bfe2cf;
+    border-radius: 14px;
+    box-shadow: 4px 4px 0 #d3ecdc;
+}
+
+.experience-icon {
+    font-size: 35px;
+}
+
+.experience-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.experience-date {
+    font-size: 13px;
+    color: #62977c;
+    font-weight: bold;
+}
+
+.experience-card h3 {
+    color: #625080;
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.experience-card h4 {
+    color: #527c68;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.experience-department {
+    font-size: 14px;
+    color: #77718f;
+}
+
+.experience-description {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.experience-tags span {
+    padding: 6px 10px;
+    background-color: #e4f5e9;
+    color: #527c68;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+@media (max-width: 500px) {
+    .experience-card {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .experience-card h3 {
+        font-size: 18px;
+    }
+}
+
+
+/* CONTACT */
+#contact {
+    background-color: #f3eaff;
+    text-align: center;
+}
+
+#contact .section-description {
+    color: #77718f;
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 28px;
+    background-color: #fffdf7;
+    border: 2px solid #d8c4f1;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0 #c7b1e8;
+}
+
+.contact-card > p {
+    color: #625080;
+    line-height: 1.8;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.contact-links a {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #e8ddfb;
+    color: #625080;
+    text-decoration: none;
+    border: 1px solid #d8c4f1;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.contact-links a:hover {
+    transform: translateY(-3px);
+    background-color: #dcd0f6;
+}
+
+@media (max-width: 450px) {
+    .contact-card {
+        padding: 20px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+    }
+}
+
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Jarak section saat dibuka lewat menu */
+section {
+    scroll-margin-top: 90px;
+}
+
+
+/* FOOTER */
+footer {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #e8ddfb;
+    border-top: 4px dashed #c7b1e8;
+    padding: 30px 20px;
+    margin: 0;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+footer .copyright {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: #e8ddfb;
+    color: #625080;
+    border: 2px solid #c7b1e8;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+
+/* Animasi saat halaman dibuka */
+#home img {
+    animation: float 3s ease-in-out infinite;
+}
+
+#home h1,
+#home h2,
+#home p {
+    animation: fadeIn 1s ease;
+}
+
+/* Foto bergerak naik turun */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Tulisan muncul perlahan */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efek ketika kartu disentuh mouse */
+.skill-card,
+.education-card,
+.experience-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover,
+.education-card:hover,
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(120, 100, 160, 0.12);
+}
+
+/* Efek tombol */
+#home a,
+.contact-links a {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#home a:hover,
+.contact-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Mengurangi animasi jika pengguna memilih preferensi ini */
+@media (prefers-reduced-motion: reduce) {
+    #home img,
+    #home h1,
+    #home h2,
+    #home p {
+        animation: none;
+    }
+
+    .skill-card,
+    .education-card,
+    .experience-card,
+    #home a,
+    .contact-links a {
+        transition: none;
+    }
+}
+
+
+/* Warna utama Pastel Adventure */
+:root {
+    --pastel-blue: #eaf4ff;
+    --pastel-purple: #e8ddfb;
+    --pastel-pink: #fbe7f1;
+    --pastel-yellow: #fff3cf;
+    --text-color: #554b68;
+    --border-color: #d9c9ef;
+}
+
+/* Warna dasar halaman */
+body {
+    background-color: var(--pastel-blue);
+    color: var(--text-color);
+}
+
+/* Judul setiap bagian */
+section h2 {
+    color: #74618f;
+}
+
+/* Kartu */
+.skill-card,
+.education-card,
+.experience-card,
+.contact-card {
+    border-color: var(--border-color);
+    border-radius: 16px;
+}
+
+/* Navigasi */
+header {
+    background-color: #ffffff;
+}
+
+/* Efek kartu saat diarahkan kursor */
+.skill-card:hover,
+.education-card:hover,
+.experience-card:hover {
+    border-color: #bba5df;
+}
+
+/* Warna footer */
+footer {
+    background-color: var(--pastel-purple);
+}
+
+
+/* Merapikan jarak bagian Education */
+#education {
+    padding-top: 25px;
+    margin-top: 0;
+}
+
+#education h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#education .section-description {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/* Animasi scroll yang lebih terlihat */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 1s ease, transform 1s ease;
+    will-change: opacity, transform;
+}
+
+.scroll-reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+
+/* Animasi kartu Skills */
+.skill-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.skill-card.show-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skill-card {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+
+/* Merapikan kartu Education dan Experience */
+.education-card,
+.experience-card {
+    background-color: #ffffff;
+    border: 1px solid #e1d5f3;
+    border-radius: 16px;
+    padding: 22px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(120, 100, 160, 0.06);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Efek hover yang lembut */
+.education-card:hover,
+.experience-card:hover {
+    transform: translateY(-4px);
+    border-color: #c7b1e8;
+    box-shadow: 0 8px 18px rgba(120, 100, 160, 0.12);
+}
+
+/* Jarak isi kartu Education */
+.education-info h3 {
+    margin-bottom: 8px;
+}
+
+.education-info p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Jarak isi kartu Experience */
+.experience-info h3 {
+    margin-bottom: 5px;
+}
+
+.experience-info h4 {
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.experience-description {
+    line-height: 1.7;
+    margin-top: 12px;
+}
+
+/* Tampilan di layar kecil */
+@media (max-width: 600px) {
+    .education-card,
+    .experience-card {
+        padding: 16px;
+    }
+}
+
+
+/* Merapikan Navbar Pastel Adventure */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 18px 6%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e8ddfb;
+    box-shadow: 0 3px 12px rgba(120, 100, 160, 0.06);
+}
+
+/* Logo website */
+header h2 {
+    margin: 0;
+    color: #74618f;
+    font-size: 22px;
+}
+
+/* Menu navigasi */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Link navigasi */
+header nav a {
+    color: #625080;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 9px 12px;
+    border-radius: 10px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Efek saat kursor diarahkan ke menu */
+header nav a:hover {
+    background-color: #f0e8fc;
+    color: #8b6db5;
+}
+
+/* Navbar pada layar kecil */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        padding: 16px 5%;
+    }
+
+    header nav {
+        gap: 5px;
+    }
+
+    header nav a {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+}
+
+
+/* ===== ABOUT ME - PASTEL ADVENTURE ===== */
+
+#about {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #fff7fb, #f4efff);
+    padding: 70px 10%;
+}
+
+/* Judul About Me */
+#about h2 {
+    color: #9878b5;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#about h2::before {
+    content: "🌷 ✦";
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#about h2::after {
+    content: "୨୧ ─────── ♡ ─────── ୨୧";
+    display: block;
+    color: #d6a8ce;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+/* Kotak isi About Me */
+#about p {
+    position: relative;
+    max-width: 850px;
+    margin: 15px auto;
+    padding: 20px 25px;
+    background: rgba(255, 255, 255, 0.85);
+    color: #655b70;
+    font-size: 15px;
+    line-height: 1.9;
+    border: 2px solid #eadff5;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0 #e8ddfb;
+    transition: transform 0.3s ease;
+}
+
+/* Efek saat kursor diarahkan */
+#about p:hover {
+    transform: translateY(-4px);
+}
+
+/* Dekorasi sudut */
+#about::before {
+    content: "✦";
+    position: absolute;
+    top: 35px;
+    left: 5%;
+    color: #c3a7df;
+    font-size: 35px;
+    transform: rotate(-15deg);
+}
+
+#about::after {
+    content: "✿";
+    position: absolute;
+    bottom: 25px;
+    right: 6%;
+    color: #e7a9ca;
+    font-size: 35px;
+}
+
+/* Tampilan HP */
+@media (max-width: 700px) {
+    #about {
+        padding: 50px 6%;
+    }
+
+    #about h2 {
+        font-size: 25px;
+    }
+
+    #about p {
+        padding: 16px;
+        font-size: 14px;
+    }
+}
